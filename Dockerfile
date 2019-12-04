@@ -4,7 +4,7 @@ ENV VERSION 	1.8.3
 ENV HOME        "/home"
 ENV PORT        3000
 ENV ADMIN_EMAIL "jmslbr@163.com"
-ENV DB_SERVER 	"mongo"
+ENV DB_SERVER 	"sparrow-mongo-svc"
 ENV DB_NAME 	"yapi"
 ENV DB_PORT 	27017
 ENV VENDORS 	${HOME}/vendors
