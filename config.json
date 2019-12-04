@@ -6,6 +6,7 @@
       "DATABASE": "DIY-DB-NAME",
       "port": "DIY-DB-PORT",
       "user": "test1",
-      "pass": "test1"
+      "pass": "test1",
+      "authSource": "admin"
    }
 }
