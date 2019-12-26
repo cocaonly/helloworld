@@ -29,6 +29,7 @@ RUN rm -rf node && \
 	git checkout v${VERSION} && \
 	npm install -g node-gyp yapi-cli && \
 	npm install --production && \
+	npm install ykit -g && \
  	chmod +x /bin/entrypoint.sh && \
  	chmod +x /wait-for-it.sh
 
