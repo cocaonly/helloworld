@@ -1,6 +1,6 @@
-FROM node:10.17.0-jessie
+FROM node:11-alpine as builder
 MAINTAINER mrjin<me@jinfeijie.cn>
-ENV VERSION 	1.8.3
+ENV VERSION 	1.8.0
 ENV HOME        "/home"
 ENV PORT        3000
 ENV ADMIN_EMAIL "jmslbr@163.com"
