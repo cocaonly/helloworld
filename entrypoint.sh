@@ -21,9 +21,10 @@ then
 	git checkout v${VERSION}
 	yapi install -v ${VERSION}
 	cd ..
-	yapi plugin --name yapi-plugin-dingding
 	yapi plugin --name yapi-plugin-interface-oauth2-token
+	yapi plugin --name yapi-plugin-dingding
 	cd ${VENDORS}
+	yapi plugin --name yapi-plugin-interface-oauth2-token
 	touch init.lock
 fi
 
