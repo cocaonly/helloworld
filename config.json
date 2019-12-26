@@ -8,5 +8,10 @@
       "user": "test1",
       "pass": "test1",
       "authSource": "admin"
-   }
+   },
+     "plugins": [
+      {
+         "name": "interface-oauth2-token"
+      }
+   ]
 }
