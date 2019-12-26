@@ -20,8 +20,10 @@ then
 	git fetch origin v${VERSION}:v${VERSION}
 	git checkout v${VERSION}
 	yapi install -v ${VERSION}
+	cd ..
 	yapi plugin --name yapi-plugin-dingding
 	yapi plugin --name yapi-plugin-interface-oauth2-token
+	cd ${VENDORS}
 	touch init.lock
 fi
 
