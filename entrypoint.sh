@@ -8,8 +8,8 @@ then
 	sed -i "s/DIY-DB-NAME/"${DB_NAME}"/g" ${HOME}/config.json
 	sed -i "s/DIY-DB-PORT/"${DB_PORT}"/g" ${HOME}/config.json
 	mv ${HOME}/config.json ${VENDORS}
-	cp ${VENDORS}/config.json ${HOME}
-	cp ${VENDORS}/config.json ${HOME}/../
+#	cp ${VENDORS}/config.json ${HOME}
+#	cp ${VENDORS}/config.json ${HOME}/../
 	# sed -i "s/DIY-PORT/3000/g" config.json
 	# sed -i "s/DIY-AC/me@jinfeijie.cn/g" ${VENDORS}/config.json
 	# sed -i "s/DIY-DB-SERVER/mongo/g" ${VENDORS}/config.json

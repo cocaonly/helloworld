@@ -1,4 +1,4 @@
-FROM node:10.17.0-alpine
+FROM alpine:latest
 MAINTAINER mrjin<me@jinfeijie.cn>
 ENV VERSION 	1.8.0
 ENV HOME        "/home"
@@ -7,7 +7,7 @@ ENV ADMIN_EMAIL "jmslbr@163.com"
 ENV DB_SERVER 	"sparrow-mongo-svc"
 ENV DB_NAME 	"yapi"
 ENV DB_PORT 	27017
-ENV VENDORS 	${HOME}/api
+ENV VENDORS 	${HOME}/vendors
 ENV GIT_URL     https://github.com/YMFE/yapi.git
 ENV GIT_MIRROR_URL     https://gitee.com/mirrors/YApi.git
 
@@ -23,8 +23,8 @@ RUN rm -rf node && \
         GIT_URL=${GIT_MIRROR_URL} && npm config set registry https://registry.npm.taobao.org; \
     fi; \
     echo ${GIT_URL} && \
-	git clone ${GIT_URL} api && \
-	cd api && \
+	git clone ${GIT_URL} vendors && \
+	cd vendors && \
 	git fetch origin  v${VERSION}:v${VERSION} && \
 	git checkout v${VERSION} && \
 	npm install -g node-gyp yapi-cli && \
