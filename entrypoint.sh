@@ -30,5 +30,6 @@ if [ $1 ]
 then
 	node $i
 else
+    ykit pack -m
 	node server/app.js
 fi
