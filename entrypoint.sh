@@ -20,7 +20,7 @@ then
 	git fetch origin v${VERSION}:v${VERSION}
 	git checkout v${VERSION}
 	yapi install -v ${VERSION}
-	yapi plugin --name yapi-plugin-interface-oauth2-token
+#	yapi plugin --name yapi-plugin-interface-oauth2-token
 	cp ${VENDORS}/config.json ${HOME}
 	cp ${VENDORS}/config.json ${HOME}/../
 	touch init.lock

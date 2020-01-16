@@ -31,7 +31,10 @@ RUN rm -rf node && \
 	npm install --production && \
 	npm install ykit -g && \
  	chmod +x /bin/entrypoint.sh && \
- 	chmod +x /wait-for-it.sh
+ 	chmod +x /wait-for-it.sh && \
+ 	cd node_modules && \
+ 	git clone https://github.com/shouldnotappearcalm/yapi-plugin-interface-oauth2-token.git yapi-plugin-interface-oauth2-token && \
+ 	cd ..
 
 EXPOSE ${PORT}
 ENTRYPOINT ["entrypoint.sh"]
